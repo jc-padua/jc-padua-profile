@@ -228,6 +228,7 @@ main {
 .contact-container {
     display: flex;
     flex-direction: column;
+    margin-bottom: 3rem;
 }
 
 .contact-container>*:not(:first-child) {
@@ -372,4 +373,6 @@ main {
         background-color: #FFF;
         width: 5rem;
     }
+
+
 }
