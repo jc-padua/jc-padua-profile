@@ -252,12 +252,12 @@ main {
 
 @media screen and (max-width:420px) {
     .avatar-details .avatar-name {
-        font-size: 3.5rem;
+        font-size: 3rem;
         line-height: 1.2;
     }
 
     .avatar-details .avatar-description {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 
     .avatar-img {
