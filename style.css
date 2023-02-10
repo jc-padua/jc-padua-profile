@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Pontano+Sans&family=Ubuntu:wght@100;200;400;500;700&display=swap');
+
+:root {
+
+    --background: #0f0e17;
+    --headline: #fffffe;
+    --paragraph: #a7a9be;
+
+    --card-background: #1a1a1e;
+
+
+    --dark-blue: #001F51;
+    --dark-bluev2: #01368b;
+    --sky-blue: #327BF0;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--background);
+    color: var(--headline);
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.7;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+section {
+    /* min-height: 100vh; */
+    /* margin: 5rem 0; */
+}
+
+/* Reusable Class */
+.section-header {
+    font-size: 2.5rem;
+    color: var(--light-blue);
+    margin: 2rem 2rem 0;
+}
+
+/* Mobile Styles*/
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-side {
+    min-height: 100vh;
+    padding: 3rem 2rem 1rem;
+}
+
+.avatar-details .avatar-name {
+    font-size: 4rem;
+    line-height: 1.2;
+}
+
+.avatar-details .avatar-title {
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+}
+
+.avatar-details .avatar-description {
+    font-size: 1.1rem;
+    color: var(--paragraph);
+    margin-bottom: 1rem;
+    line-height: 2;
+}
+
+.avatar-details button {
+    padding: 1rem 1.5rem;
+}
+
+.avatar-details i {
+    margin-right: .5rem;
+}
+
+.avatar-details .button {
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: var(--dark-bluev2);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    display: inline-block;
+}
+
+.avatar-details .button:hover {
+    filter: brightness(90%);
+}
+
+.avatar-img {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.avatar-img img {
+    width: 5rem;
+    border-radius: 50%;
+}
+
+.avatar-platforms {
+    display: flex;
+    font-size: 2rem;
+    gap: 2rem;
+    margin-left: 2rem;
+}
+
+.avatar-img a {
+    color: #FFF;
+}
+
+.avatar-platforms i {
+    cursor: pointer;
+    transition: scale .3s ease;
+}
+
+.avatar-platforms i:hover {
+    scale: 1.150;
+}
+
+.section-navigator {
+    display: none;
+}
+
+/* Project Section */
+
+.card-container a {
+    color: var(--headline);
+}
+
+.card-container .card {
+    background: var(--card-background);
+    border-radius: 3px;
+    box-shadow: 2px 2px 4px 0 #ffffff1e;
+    padding: 1.5rem;
+    margin: 1rem 2rem;
+    transition: scale .5s ease;
+}
+
+.card:hover {
+    scale: 1.1;
+}
+
+
+.card .card-project .project-title {
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.card-project .project-detail,
+.card-tech {
+    color: var(--paragraph);
+}
+
+.card-project>*:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+/* Skills Section */
+.icons-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.skill-icon {
+    font-size: 3.5rem;
+}
+
+.icons-container .card {
+    background: var(--card-background);
+    border-radius: 3px;
+    box-shadow: 2px 2px 4px 0 #ffffff1e;
+    padding: .5rem 2rem;
+    text-align: center;
+    margin: 1rem;
+    transition: scale .5s ease;
+}
+
+/* About Me Section */
+
+.details .card {
+    background: var(--card-background);
+    border-radius: 3px;
+    box-shadow: 2px 2px 4px 0 #ffffff1e;
+    padding: 1.5rem;
+    margin: 1rem 2rem;
+    transition: scale .5s ease;
+    /* height: 15rem; */
+}
+
+.details .card small {
+    display: block;
+    letter-spacing: 1.5px;
+}
+
+.details .card .detail-status {
+    color: var(--paragraph);
+    margin: 1rem 0;
+}
+
+.details .card p {
+    font-size: 1.2rem;
+}
+
+/* Contact Section */
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container>*:not(:first-child) {
+    margin: 1rem 2rem;
+}
+
+.contact-button {
+    /* text-align: center; */
+    margin: 2rem 0;
+}
+
+.contact-container a {
+    background-color: var(--sky-blue);
+    color: #FFF;
+    padding: .5rem 2rem;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* Mobile Media Query */
+
+@media screen and (max-width:420px) {
+    .avatar-details .avatar-name {
+        font-size: 3.5rem;
+        line-height: 1.2;
+    }
+
+    .avatar-details .avatar-description {
+        font-size: 1.3rem;
+    }
+
+    .avatar-img {
+        margin-top: 3rem;
+    }
+
+    .avatar-platforms {
+        gap: 1rem;
+    }
+}
+
+/* Tablet View */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .main {
+        flex-direction: row;
+    }
+
+    .left-side {
+        position: sticky;
+        top: 0;
+        width: 55%;
+        height: 100%;
+        min-height: 100%;
+    }
+
+    .right-side {
+        width: 100%;
+        min-width: 45%;
+        overflow: auto;
+        padding-left: 0;
+        padding-right: 2rem;
+    }
+}
+
+/* Desktop View */
+
+@media screen and (min-width: 1023px) {
+    .main {
+        flex-direction: row;
+    }
+
+    .left-side {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        min-height: 100%;
+        padding-left: 5rem;
+    }
+
+    .right-side {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 5rem;
+    }
+
+    .avatar-details .avatar-name {
+        font-size: 4rem;
+    }
+
+    .avatar-details .avatar-description {
+        font-size: 1rem;
+    }
+
+    .avatar-details .button {
+        margin-top: 1rem;
+    }
+
+    .section-navigator {
+        margin-top: 1.5rem;
+        display: block;
+        /* To be Fixed */
+        /* opacity: 0%; */
+    }
+
+    .section-navigator .line {
+        display: inline-block;
+        height: 1px;
+        width: 3rem;
+        background-color: #767676;
+        margin: 0 1rem;
+        transition: width 1s ease;
+    }
+
+    .section-navigator li {
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+        color: #767676;
+    }
+
+    .section-navigator i {
+        font-size: 1rem;
+    }
+
+    li:hover .line {
+        background-color: #FFF;
+        width: 5rem;
+    }
+
+    li:hover .text,
+    li:hover i {
+        color: #FFF;
+    }
+
+
+    .section-navigator li.active {
+        color: #FFF;
+    }
+
+    .section-navigator li.active .line {
+        background-color: #FFF;
+        width: 5rem;
+    }
+}
