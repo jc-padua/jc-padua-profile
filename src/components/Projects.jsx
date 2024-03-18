@@ -35,8 +35,8 @@ function Projects() {
     },
   ];
   return (
-    <section className="text-center flex flex-col gap-7">
-      <p className="text-2xl">Projects</p>
+    <section className="text-center flex flex-col gap-7 m-6">
+      <p className="text-2xl lg:text-4xl">Projects</p>
       {projects.map(project => {
         return (
           <Card key={project.name}>
@@ -59,7 +59,7 @@ function Projects() {
                   </DialogDescription>
                 </DialogHeader>
                 <DialogFooter className="mt-4">
-                  <DialogClose className="text-gray-300 outline rounded-lg active:outline-red-400">
+                  <DialogClose className="text-gray-300 outline rounded-lg active:outline-red-400 px-4 py-1">
                     Close
                   </DialogClose>
                 </DialogFooter>

@@ -3,16 +3,16 @@ import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 function Profile() {
   return (
-    <section className="flex flex-col gap-10">
+    <section className="flex flex-col gap-10 m-6">
       <div className="flex flex-col gap-1">
-        <p className="min-[320px]:text-xl sm:text-2xl font-medium text-center">
+        <p className="min-[320px]:text-xl sm:text-2xl lg:text-5xl lg:text-left font-medium text-center">
           Jork Cedric Padua
         </p>
-        <p className="min-[320px]:text-sm sm:text-2xl text-center">
+        <p className="min-[320px]:text-sm sm:text-2xl lg:text-base lg:text-left text-center">
           Front-End Developer
         </p>
       </div>
-      <p className="min-[320px]:text-[1rem] sm:text-2xl leading-7 text-justify">
+      <p className="min-[320px]:text-[1rem] sm:text-2xl lg:text-2xl lg:leading-10 leading-7 text-justify">
         I'm a self-taught frontend developer with a year of experience.
         Passionate about crafting attractive, user-friendly websites. Eager to
         learn new technologies, I'm confident in my ability to meet and exceed

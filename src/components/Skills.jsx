@@ -23,8 +23,8 @@ import {
 } from 'react-icons/si';
 function Skills() {
   return (
-    <section className="text-center flex flex-col gap-7">
-      <p className="text-2xl">Skills</p>
+    <section className="text-center flex flex-col gap-7 m-6">
+      <p className="text-2xl lg:text-4xl my-9">Skills</p>
       <div className="grid grid-cols-5 max-[425px]:grid-cols-3 gap-5 place-items-center">
         <FaHtml5 size={50} color="#e34c26" />
         <FaCss3 size={50} color="#42a5f5" />
